@@ -5,11 +5,17 @@
  */
 
 package sistemaventa;
-
+import igu.CambiarPanel;
+import igu.cliente.ClientePanel;
+import igu.tipo.TipoPanel;
+import igu.producto.ProductoPanel;
+import igu.compra.CompraPanel;
+import igu.compra_det.CompraDetPanel;
 /**
  *
  * @author ING. DE SISTEMAS
  */
+
 public class JFrame extends javax.swing.JFrame {
 
     /** Creates new form JFrame */
@@ -26,308 +32,178 @@ public class JFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        txtnombresapellidos = new javax.swing.JTextField();
-        txtdocumento = new javax.swing.JTextField();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        txtidproducto = new javax.swing.JTextField();
-        txtartículo = new javax.swing.JTextField();
-        txtcantidad = new javax.swing.JTextField();
-        txtstock = new javax.swing.JTextField();
-        txtprecio = new javax.swing.JTextField();
-        txttipodeproducto = new javax.swing.JTextField();
-        txttotalapagar = new javax.swing.JTextField();
-        btgenerarcompra = new javax.swing.JButton();
-        btlimpiar = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        tabladetalles = new javax.swing.JTable();
-        btlimpiartabla = new javax.swing.JButton();
-        btquitartabla = new javax.swing.JButton();
-        btnetoapagar = new javax.swing.JButton();
-        jLabel11 = new javax.swing.JLabel();
-        txtnetopagar = new javax.swing.JTextField();
+        backgroundPanel = new javax.swing.JPanel();
+        menuBarPanel = new javax.swing.JPanel();
+        clienteButton = new javax.swing.JButton();
+        tipoButton = new javax.swing.JButton();
+        productoButton = new javax.swing.JButton();
+        compraButton = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        changePanel = new javax.swing.JPanel();
+        tittlePanel = new javax.swing.JPanel();
+        mainTittle = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
+        setResizable(false);
 
-        jLabel1.setText("SISTEMAS DE VENTAS");
+        backgroundPanel.setBackground(new java.awt.Color(89, 103, 212));
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("CLIENTE"));
+        menuBarPanel.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel2.setText("Nombres y Apellidos");
+        clienteButton.setBackground(new java.awt.Color(102, 255, 255));
+        clienteButton.setText("jButton1");
+        clienteButton.setPreferredSize(new java.awt.Dimension(75, 23));
+        clienteButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                clienteButtonActionPerformed(evt);
+            }
+        });
 
-        jLabel3.setText("Dni:");
+        tipoButton.setBackground(new java.awt.Color(102, 255, 255));
+        tipoButton.setText("jButton2");
+        tipoButton.setPreferredSize(new java.awt.Dimension(75, 23));
+        tipoButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tipoButtonActionPerformed(evt);
+            }
+        });
 
-        org.jdesktop.layout.GroupLayout jPanel1Layout = new org.jdesktop.layout.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel1Layout.createSequentialGroup()
+        productoButton.setBackground(new java.awt.Color(102, 255, 255));
+        productoButton.setText("jButton3");
+        productoButton.setPreferredSize(new java.awt.Dimension(75, 23));
+        productoButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                productoButtonActionPerformed(evt);
+            }
+        });
+
+        compraButton.setBackground(new java.awt.Color(102, 255, 255));
+        compraButton.setText("jButton4");
+        compraButton.setPreferredSize(new java.awt.Dimension(75, 23));
+        compraButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                compraButtonActionPerformed(evt);
+            }
+        });
+
+        jButton1.setText("Det");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        org.jdesktop.layout.GroupLayout menuBarPanelLayout = new org.jdesktop.layout.GroupLayout(menuBarPanel);
+        menuBarPanel.setLayout(menuBarPanelLayout);
+        menuBarPanelLayout.setHorizontalGroup(
+            menuBarPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(menuBarPanelLayout.createSequentialGroup()
+                .add(50, 50, 50)
+                .add(clienteButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 152, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(tipoButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 148, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(44, 44, 44)
+                .add(productoButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 166, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(47, 47, 47)
+                .add(compraButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 158, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(33, 33, 33)
+                .add(jButton1)
+                .add(20, 20, 20))
+        );
+        menuBarPanelLayout.setVerticalGroup(
+            menuBarPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(menuBarPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                .add(compraButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 46, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(productoButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 46, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(tipoButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 46, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(clienteButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 46, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(jButton1))
+        );
+
+        changePanel.setBackground(new java.awt.Color(255, 255, 255));
+        changePanel.setLayout(new javax.swing.BoxLayout(changePanel, javax.swing.BoxLayout.LINE_AXIS));
+
+        mainTittle.setFont(new java.awt.Font("Showcard Gothic", 0, 24)); // NOI18N
+        mainTittle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        mainTittle.setText("SISTEMA DE VENTAS");
+
+        org.jdesktop.layout.GroupLayout tittlePanelLayout = new org.jdesktop.layout.GroupLayout(tittlePanel);
+        tittlePanel.setLayout(tittlePanelLayout);
+        tittlePanelLayout.setHorizontalGroup(
+            tittlePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, tittlePanelLayout.createSequentialGroup()
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(mainTittle, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 370, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(308, 308, 308))
+        );
+        tittlePanelLayout.setVerticalGroup(
+            tittlePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(mainTittle, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 36, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+        );
+
+        org.jdesktop.layout.GroupLayout backgroundPanelLayout = new org.jdesktop.layout.GroupLayout(backgroundPanel);
+        backgroundPanel.setLayout(backgroundPanelLayout);
+        backgroundPanelLayout.setHorizontalGroup(
+            backgroundPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(backgroundPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(txtnombresapellidos)
-                    .add(jPanel1Layout.createSequentialGroup()
-                        .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(jLabel2)
-                            .add(jLabel3)
-                            .add(txtdocumento, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 108, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .add(0, 43, Short.MAX_VALUE)))
+                .add(backgroundPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(tittlePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, changePanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 944, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(menuBarPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel1Layout.createSequentialGroup()
-                .add(jLabel2)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(txtnombresapellidos, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jLabel3)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(txtdocumento, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("REALIZAR COMPRA"));
-
-        jLabel4.setText("IdProducto:");
-
-        jLabel5.setText("Artículo:");
-
-        jLabel6.setText("Cantidad:");
-
-        jLabel7.setText("Precio:");
-
-        jLabel8.setText("Stock:");
-
-        jLabel9.setText("Tipo de Producto:");
-
-        jLabel10.setText("Total a pagar:");
-
-        txtidproducto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtidproductoActionPerformed(evt);
-            }
-        });
-
-        txtartículo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtartículoActionPerformed(evt);
-            }
-        });
-
-        btgenerarcompra.setText("Generar compra");
-        btgenerarcompra.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btgenerarcompraActionPerformed(evt);
-            }
-        });
-
-        btlimpiar.setText("Limpiar");
-
-        org.jdesktop.layout.GroupLayout jPanel2Layout = new org.jdesktop.layout.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel2Layout.createSequentialGroup()
-                .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                    .add(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                            .add(jLabel4, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .add(txtidproducto))
-                        .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(jPanel2Layout.createSequentialGroup()
-                                .add(42, 42, 42)
-                                .add(jLabel5)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .add(18, 18, Short.MAX_VALUE)
-                                .add(txtartículo, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 83, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                .add(31, 31, 31)))
-                        .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                            .add(jLabel6, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .add(txtcantidad))
-                        .add(37, 37, 37)
-                        .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                            .add(jPanel2Layout.createSequentialGroup()
-                                .add(txtstock, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 30, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                .add(18, 18, 18)
-                                .add(txtprecio, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 58, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                .add(26, 26, 26)
-                                .add(txttipodeproducto, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 85, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                            .add(jPanel2Layout.createSequentialGroup()
-                                .add(jLabel8)
-                                .add(33, 33, 33)
-                                .add(jLabel7)
-                                .add(36, 36, 36)
-                                .add(jLabel9))))
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .add(113, 113, 113)
-                        .add(btgenerarcompra, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 109, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .add(btlimpiar)))
-                .add(31, 31, 31)
-                .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(jLabel10)
-                    .add(txttotalapagar, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 68, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(23, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jLabel4)
-                    .add(jLabel5)
-                    .add(jLabel6)
-                    .add(jLabel7)
-                    .add(jLabel8)
-                    .add(jLabel9)
-                    .add(jLabel10))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(txtartículo, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(txtidproducto, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(txtcantidad, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(txtstock, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(txtprecio, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(txttipodeproducto, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(txttotalapagar, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .add(45, 45, 45)
-                .add(jPanel2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(btgenerarcompra)
-                    .add(btlimpiar))
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("DETALLE DE COMPRA"));
-
-        tabladetalles.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {},
-                {},
-                {},
-                {}
-            },
-            new String [] {
-
-            }
-        ));
-        jScrollPane1.setViewportView(tabladetalles);
-
-        btlimpiartabla.setText("Limpiar tabla");
-
-        btquitartabla.setText("Quitar tabla");
-
-        btnetoapagar.setText("Neto a pagar");
-
-        jLabel11.setText("Neto a pagar S/.");
-
-        txtnetopagar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtnetopagarActionPerformed(evt);
-            }
-        });
-
-        org.jdesktop.layout.GroupLayout jPanel3Layout = new org.jdesktop.layout.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel3Layout.createSequentialGroup()
-                .add(jPanel3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jPanel3Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .add(jScrollPane1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 826, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                    .add(jPanel3Layout.createSequentialGroup()
-                        .add(73, 73, 73)
-                        .add(btlimpiartabla)
-                        .add(73, 73, 73)
-                        .add(btquitartabla)
-                        .add(77, 77, 77)
-                        .add(btnetoapagar)
-                        .add(127, 127, 127)
-                        .add(jLabel11)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(txtnetopagar, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 61, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(13, Short.MAX_VALUE))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .add(jScrollPane1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 120, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(48, 48, 48)
-                .add(jPanel3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(btlimpiartabla)
-                    .add(btquitartabla)
-                    .add(btnetoapagar)
-                    .add(jLabel11)
-                    .add(txtnetopagar, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(25, Short.MAX_VALUE))
+        backgroundPanelLayout.setVerticalGroup(
+            backgroundPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(backgroundPanelLayout.createSequentialGroup()
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(tittlePanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                .add(menuBarPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                .add(changePanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 371, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(7, 7, 7))
         );
 
         org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(layout.createSequentialGroup()
-                .add(40, 40, 40)
-                .add(jPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .add(jLabel1)
-                .add(409, 409, 409))
-            .add(layout.createSequentialGroup()
-                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .add(jPanel3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
-                        .add(259, 259, 259)
-                        .add(jPanel2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(61, Short.MAX_VALUE))
+            .add(backgroundPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(layout.createSequentialGroup()
-                .addContainerGap()
-                .add(jLabel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 14, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(jPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(jPanel2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .add(jPanel3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(47, 47, 47))
+            .add(backgroundPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtidproductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtidproductoActionPerformed
+    private void clienteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clienteButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtidproductoActionPerformed
+        new CambiarPanel(changePanel, new ClientePanel());
+    }//GEN-LAST:event_clienteButtonActionPerformed
 
-    private void txtartículoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtartículoActionPerformed
+    private void tipoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tipoButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtartículoActionPerformed
+        new CambiarPanel(changePanel, new TipoPanel());
+    }//GEN-LAST:event_tipoButtonActionPerformed
 
-    private void btgenerarcompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btgenerarcompraActionPerformed
+    private void productoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productoButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btgenerarcompraActionPerformed
+        new CambiarPanel(changePanel, new ProductoPanel());
+    }//GEN-LAST:event_productoButtonActionPerformed
 
-    private void txtnetopagarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnetopagarActionPerformed
+    private void compraButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_compraButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtnetopagarActionPerformed
+        new CambiarPanel(changePanel, new CompraPanel());
+    }//GEN-LAST:event_compraButtonActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        new CambiarPanel(changePanel, new CompraDetPanel());
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -355,6 +231,9 @@ public class JFrame extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(JFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -365,37 +244,16 @@ public class JFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btgenerarcompra;
-    private javax.swing.JButton btlimpiar;
-    private javax.swing.JButton btlimpiartabla;
-    private javax.swing.JButton btnetoapagar;
-    private javax.swing.JButton btquitartabla;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable tabladetalles;
-    private javax.swing.JTextField txtartículo;
-    private javax.swing.JTextField txtcantidad;
-    private javax.swing.JTextField txtdocumento;
-    private javax.swing.JTextField txtidproducto;
-    private javax.swing.JTextField txtnetopagar;
-    private javax.swing.JTextField txtnombresapellidos;
-    private javax.swing.JTextField txtprecio;
-    private javax.swing.JTextField txtstock;
-    private javax.swing.JTextField txttipodeproducto;
-    private javax.swing.JTextField txttotalapagar;
+    private javax.swing.JPanel backgroundPanel;
+    public static javax.swing.JPanel changePanel;
+    private javax.swing.JButton clienteButton;
+    private javax.swing.JButton compraButton;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel mainTittle;
+    private javax.swing.JPanel menuBarPanel;
+    private javax.swing.JButton productoButton;
+    private javax.swing.JButton tipoButton;
+    private javax.swing.JPanel tittlePanel;
     // End of variables declaration//GEN-END:variables
 
 }
