@@ -10,10 +10,7 @@ import java.util.Date;
 import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
-/**
- *
- * @author Asullom
- */
+
 public class ComprasTableModel extends AbstractTableModel {
 
     private List<Compra> lis = new ArrayList();

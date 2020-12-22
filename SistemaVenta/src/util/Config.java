@@ -7,10 +7,7 @@ package util;
 
 import java.util.regex.Pattern;
 
-/**
- *
- * @author jonatan
- */
+
 public class Config {
     public static final String DEFAULT_DATE_STRING_FORMAT_PE = "dd/MM/yyyy";
     public static final String DEFAULT_DATE_STRING_FORMAT_PE_L = "dd/MM/yyyy HH:mm:ss.SSS";

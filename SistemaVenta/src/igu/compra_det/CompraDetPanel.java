@@ -24,10 +24,7 @@ import javax.swing.JOptionPane;
 import javax.swing.border.LineBorder;
 import modelo.CompraDet;
 
-/**
- *
- * @author jonatan
- */
+
 public class CompraDetPanel extends javax.swing.JPanel {
     
      private DefaultComboBoxModel comprasComboModel, productosComboModel;

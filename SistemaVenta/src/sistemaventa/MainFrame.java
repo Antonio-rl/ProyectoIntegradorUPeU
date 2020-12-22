@@ -6,10 +6,7 @@
 
 package sistemaventa;
 
-/**
- *
- * @author ING. DE SISTEMAS
- */
+
 public class MainFrame extends javax.swing.JFrame {
 
     /** Creates new form JFrame */

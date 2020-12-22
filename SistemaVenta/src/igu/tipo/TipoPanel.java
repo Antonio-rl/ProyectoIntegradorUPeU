@@ -14,10 +14,7 @@ import javax.swing.JOptionPane;
 import javax.swing.ListSelectionModel;
 import javax.swing.border.LineBorder;
 
-/**
- *
- * @author jonatan
- */
+
 public class TipoPanel extends javax.swing.JPanel {
     TiposTableModel tiposTableModel;
     /** Creates new form ClientePanel */

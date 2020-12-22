@@ -7,10 +7,7 @@ package modelo;
 
 import java.util.Date;
 
-/**
- *
- * @author jonatan
- */
+
 public class Compra {
     private int idCompra;
     private int idCliente;

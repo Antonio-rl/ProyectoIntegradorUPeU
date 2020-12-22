@@ -8,10 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
-/**
- *
- * @author Asullom
- */
+
 public class ProductosTableModel extends AbstractTableModel {
 
     private List<Producto> lis = new ArrayList();

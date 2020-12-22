@@ -5,10 +5,7 @@
  */
 package modelo;
 
-/**
- *
- * @author jonatan
- */
+
 public class Producto {
     private int idProducto;
     private String nombreProd;

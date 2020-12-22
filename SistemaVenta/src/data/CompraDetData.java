@@ -14,10 +14,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-/**
- *
- * @author jonatan
- */
 public class CompraDetData {
      static Connection cn = Conexion.connectSQLite();
     static PreparedStatement ps;

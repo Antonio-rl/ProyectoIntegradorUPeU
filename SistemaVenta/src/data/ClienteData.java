@@ -11,10 +11,7 @@ import java.util.List;
 
 import java.util.logging.Level;
 
-/**
- *
- * @author Asullom
- */
+
 public class ClienteData {
 
     static Connection cn = Conexion.connectSQLite();

@@ -5,10 +5,7 @@
  */
 package modelo;
 
-/**
- *
- * @author jonatan
- */
+
 public class CompraDet {
     private int idCompraDet;
     private int idCompra;

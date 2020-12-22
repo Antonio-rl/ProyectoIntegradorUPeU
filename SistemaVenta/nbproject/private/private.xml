@@ -3,11 +3,29 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/test/new/ProyectoIntegradorUPeU/SistemaVenta/src/igu/compra/CompraPanel.java</file>
-            <file>file:/D:/test/new/ProyectoIntegradorUPeU/SistemaVenta/src/igu/producto/ProductoPanel.java</file>
-            <file>file:/D:/test/new/ProyectoIntegradorUPeU/SistemaVenta/src/modelo/Compra.java</file>
-            <file>file:/D:/test/new/ProyectoIntegradorUPeU/SistemaVenta/src/data/CompraData.java</file>
-            <file>file:/D:/test/new/ProyectoIntegradorUPeU/SistemaVenta/src/modelo/Producto.java</file>
+            <file>file:/C:/Users/ING.%20DE%20SISTEMAS/Documents/eclipse/ProyectoIntegradorUPeU/SistemaVenta/src/data/CompraDetData.java</file>
+            <file>file:/C:/Users/ING.%20DE%20SISTEMAS/Documents/eclipse/ProyectoIntegradorUPeU/SistemaVenta/src/igu/compra_det/CompraDetTableModel.java</file>
+            <file>file:/C:/Users/ING.%20DE%20SISTEMAS/Documents/eclipse/ProyectoIntegradorUPeU/SistemaVenta/src/modelo/Cliente.java</file>
+            <file>file:/C:/Users/ING.%20DE%20SISTEMAS/Documents/eclipse/ProyectoIntegradorUPeU/SistemaVenta/src/igu/tipo/TipoPanel.java</file>
+            <file>file:/C:/Users/ING.%20DE%20SISTEMAS/Documents/eclipse/ProyectoIntegradorUPeU/SistemaVenta/src/igu/producto/ProductosTableModel.java</file>
+            <file>file:/C:/Users/ING.%20DE%20SISTEMAS/Documents/eclipse/ProyectoIntegradorUPeU/SistemaVenta/src/sistemaventa/JFrame.java</file>
+            <file>file:/C:/Users/ING.%20DE%20SISTEMAS/Documents/eclipse/ProyectoIntegradorUPeU/SistemaVenta/src/sistemaventa/MainFrame.java</file>
+            <file>file:/C:/Users/ING.%20DE%20SISTEMAS/Documents/eclipse/ProyectoIntegradorUPeU/SistemaVenta/src/igu/producto/ProductoPanel.java</file>
+            <file>file:/C:/Users/ING.%20DE%20SISTEMAS/Documents/eclipse/ProyectoIntegradorUPeU/SistemaVenta/src/modelo/CompraDet.java</file>
+            <file>file:/C:/Users/ING.%20DE%20SISTEMAS/Documents/eclipse/ProyectoIntegradorUPeU/SistemaVenta/src/data/Conexion.java</file>
+            <file>file:/C:/Users/ING.%20DE%20SISTEMAS/Documents/eclipse/ProyectoIntegradorUPeU/SistemaVenta/src/igu/CambiarPanel.java</file>
+            <file>file:/C:/Users/ING.%20DE%20SISTEMAS/Documents/eclipse/ProyectoIntegradorUPeU/SistemaVenta/src/data/CompraData.java</file>
+            <file>file:/C:/Users/ING.%20DE%20SISTEMAS/Documents/eclipse/ProyectoIntegradorUPeU/SistemaVenta/src/modelo/Compra.java</file>
+            <file>file:/C:/Users/ING.%20DE%20SISTEMAS/Documents/eclipse/ProyectoIntegradorUPeU/SistemaVenta/src/util/Config.java</file>
+            <file>file:/C:/Users/ING.%20DE%20SISTEMAS/Documents/eclipse/ProyectoIntegradorUPeU/SistemaVenta/src/modelo/Producto.java</file>
+            <file>file:/C:/Users/ING.%20DE%20SISTEMAS/Documents/eclipse/ProyectoIntegradorUPeU/SistemaVenta/src/sistemaventa/MAIN.java</file>
+            <file>file:/C:/Users/ING.%20DE%20SISTEMAS/Documents/eclipse/ProyectoIntegradorUPeU/SistemaVenta/src/data/TipoData.java</file>
+            <file>file:/C:/Users/ING.%20DE%20SISTEMAS/Documents/eclipse/ProyectoIntegradorUPeU/SistemaVenta/src/modelo/Tipo.java</file>
+            <file>file:/C:/Users/ING.%20DE%20SISTEMAS/Documents/eclipse/ProyectoIntegradorUPeU/SistemaVenta/src/igu/cliente/ClientePanel.java</file>
+            <file>file:/C:/Users/ING.%20DE%20SISTEMAS/Documents/eclipse/ProyectoIntegradorUPeU/SistemaVenta/src/igu/cliente/ClientesTableModel.java</file>
+            <file>file:/C:/Users/ING.%20DE%20SISTEMAS/Documents/eclipse/ProyectoIntegradorUPeU/SistemaVenta/src/data/ProductoData.java</file>
+            <file>file:/C:/Users/ING.%20DE%20SISTEMAS/Documents/eclipse/ProyectoIntegradorUPeU/SistemaVenta/src/igu/compra_det/CompraDetPanel.java</file>
+            <file>file:/C:/Users/ING.%20DE%20SISTEMAS/Documents/eclipse/ProyectoIntegradorUPeU/SistemaVenta/src/data/ClienteData.java</file>
         </group>
     </open-files>
 </project-private>

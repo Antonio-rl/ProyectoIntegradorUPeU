@@ -17,10 +17,7 @@ import java.util.List;
 import java.util.logging.Level;
 import org.sqlite.SQLiteConfig;
 
-/**
- *
- * @author jonatan
- */
+
 public class ProductoData {
     static Connection cn = Conexion.connectSQLite();
     static PreparedStatement ps;
